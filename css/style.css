@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none; 
+}
+h1 {font-size: 3.5em;}
+h2 {font-size: 2.7em;}
+h3 {font-size: 2em;}
+p { font-size: 1.25em;}
+li{ font-size: 1.25em;}
+
+body {
+    font-family: 'Bebas Neue', cursive;
+    margin: 0;
+}
+
+.compra{
+    font-size: 1.5em;
+    padding: 10px 30px;
+    color: aliceblue;
+    background-color: blueviolet;
+}
+
+.compra:hover {
+    background-color: blueviolet;
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.resaltar {
+    color: rgb(10, 65, 136);
+}
+/*vamos con el header*/
+.header {
+    background-color: rgb(245, 245, 245);
+}
+
+.header .logo {
+    padding: 25px 30px;
+    font-weight: bold;
+    color: blueviolet;
+    font-size: 2em;
+}
+
+.header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.header a {
+    padding: 5px 12px;
+    font-weight: bold;
+    color: black;
+    font-size: 1.5em;
+}
+
+.header a:hover {
+    color: blueviolet;
+}
+
+/*arancamos con el hero*/
+#hero {
+    font-size: 15px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    color: black;
+    background-image:url(../assest/fondo.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center, center;
+}
+#hero .compra{
+    font-size: 1.6em;
+}
+/*arrancamos con la otra seccion*/
+.somosSet .container { /*lo acomode en el medio y quedo responzive*/
+    text-align: center;
+    padding: 200px 12px;
+}
+
+/*seccion TARJETAS crando estilo a las tarjetas*/
+.tituloTarjetas {
+    text-align: center;
+    font-size: 40px;
+    color: #6a6a6a;
+    background-color: rgb(245, 245, 245);
+}
+
+.tarjetas .container {
+    width: 100%;
+    max-width:1400px;
+    height:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    background-color: rgb(245, 245, 245);
+}
+
+.container .card {
+    width: 430px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25;
+}
+
+.container .card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container .card img {
+    width: 330px;
+    height: 280px
+}
+
+.container .card h3 {
+    font-weight: 500;
+}
+
+.container .card p {
+    padding: 0 1rem ;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.container .card a {
+    font-weight: 400;
+    font-size: 40px;
+    color: black;
+    transition: all 0.25;
+}
+.container .card a:hover {
+    color: blueviolet;
+}
+
+
+
+
+
+/*caracteristicas*/
+.caracteristicas .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+.caracteristicas li {
+    margin: 16px 0;
+    font-weight: bold;
+}
+
+/**/
+.consultar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 80vh;
+}
+.consultar h2 {
+    font-size: 7vw;
+}
+.consultar .compra {
+    font-size: 4vw;
+}
+
+/*footer*/
+.footer {
+    background-color: rgb(230, 230, 230);
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.footer p {
+    color: rgb(100, 100, 100);
+    padding: 12px;
+}
+
+/*PAGINA PRODUCTOS*/
+.imagenesTitulo {
+    background-color: blueviolet;
+    align-items: center;
+    text-align:center;
+}
+
+.imagenes h2 {
+    text-align:center;
+    padding: 10px;
+}
+
+.imagenesProductos {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    justify-content:center;
+}
+
+.imagenes .imagenesProductos img {
+    width: 100px;
+    flex-grow: 3;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5 ease;
+}
+.imagenes .imagenesProductos img:hover {
+    width: 500px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+/*TARJETAS DE PRODUCTOS*/
+.tituloProductos{
+    text-align: center;
+    padding: 20px;
+    font-size: 40px;
+    color: black;
+    background-color: rgb(245, 245, 245);
+}
+
+
+
+@media only screen and (min-width:320px){
+
+
+}
+
+@media only screen and (min-width:720px) {
+    .header {
+        position: fixed;
+        width: 100%;
+    }
+    
+    .header .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+    /*terminada la primera seccion*/
+
+
+    .somosSet .container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .somosSet .textoSet {
+        width: 50%;
+        max-width: 500px;
+        text-align: initial;
+        padding:  30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .somosSet .imgContainer {
+        background-image: url(../assest/img\ container.jpeg);
+        background-size: cover;
+        background-position:  center;
+        height: 500px;
+        width: 400px;
+    }
+
+
+    /*caracteristicas*/
+    .caracteristicas {
+        background-image: url(../assest/caracterizticas.jpeg);
+        background-repeat: no-repeat;
+        background-size: 350px 400px;
+        background-position: calc(100vw - 375px) 120px;
+    }
+
+    .caracteristicas .container {
+        text-align: initial;
+    }
+
+    .caracteristicas ul {
+        margin-left: 10px;
+    }
+
+    /*consultar*/
+    .consultar h2 {
+        font-size: 4em;
+    }
+
+    .consultar a {
+        font-size: 1.5em;
+    }
+
+    /*footer*/
+    .footer {
+        justify-content: flex-end;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .caracteristicas {
+        background-position:  calc(100vw - 550px);
+    }
+
+    .caracteristicas ul {
+        margin-left: 100px;
+    }
+}
+
