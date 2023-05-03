@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
+    font-family: 'Bebas Neue', cursive;
 }
 ul {
     list-style: none;
@@ -210,46 +211,223 @@ body {
     padding: 12px;
 }
 
-/*PAGINA PRODUCTOS*/
-.imagenesTitulo {
-    background-color: blueviolet;
-    align-items: center;
-    text-align:center;
+
+
+
+/*  EMPEZAMOS A TRABAJAR PRODUCTOS */
+
+/*Trabajamos con el contenedor de productos*/
+.contenedor {
+    display: grid;
+    grid-template-columns:1fr 4fr;
+    background-color: rgb(230, 230, 230);
 }
 
-.imagenes h2 {
-    text-align:center;
-    padding: 10px;
-}
-
-.imagenesProductos {
+/*aside*/
+aside {
+    padding: 2rem;
+    padding-right: 0;
+    position: sticky;
+    top: 0;
+    height: 100vh;
     display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+}
+
+.logoActive {
+    font-weight: 200;
+    font-size: 35px;
+}
+
+.footerProductos {
+    color: rgb(100, 100, 100);
+}
+
+/*Vamos con los productos */ 
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.bi-hand-index-thumb {
+    transform: rotateZ(90deg);
+}
+
+.botonMenu {
+    background-color: transparent;
+    border: 0;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
     width: 100%;
-    height: 500px;
-    justify-content:center;
 }
 
-.imagenes .imagenesProductos img {
-    width: 100px;
-    flex-grow: 3;
-    object-fit: cover;
-    opacity: .8;
-    transition: .5 ease;
-}
-.imagenes .imagenesProductos img:hover {
-    width: 500px;
-    opacity: 1;
-    filter: contrast(120%);
-}
 
-/*TARJETAS DE PRODUCTOS*/
-.tituloProductos{
-    text-align: center;
-    padding: 20px;
-    font-size: 40px;
+
+.active{
+    background-color: white;
     color: black;
-    background-color: rgb(245, 245, 245);
+    width: 100%;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
 }
+
+.botonCarrito {
+    margin-top: 2rem;
+}
+
+/* ARANCAMOS CON EL CARRITO */
+
+.contenedorCompras {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.campraProductos {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.compraProducto {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(230, 230, 230);
+    border-radius: 1rem;
+    padding: 0.5rem;
+    padding-right: 1.5rem;
+    align-items: center;
+}
+
+.imagenCarrito {
+    width: 5rem;
+    border-radius: 1rem;
+}
+
+small {
+    font-size: 0.8rem;
+}
+
+.compraEliminar {
+    border: 0;
+    background-color: transparent;
+    color: red;
+    cursor: pointer;
+}
+
+/*seguimos con carrito Acciones*/
+.carritoAcciones {
+    display: flex;
+    justify-content: space-between;
+}
+
+.carritoVaciarElementos {
+    border: 0;
+    font-size: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: rgb(230, 230, 230);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.carritoDeCompra{
+    display: flex;
+}
+.total {
+    display: flex;
+    font-size: 1rem;
+    padding: 1rem;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    background-color: rgb(230, 230, 230);
+    text-transform: uppercase;
+    gap: 0.5rem;
+}
+
+.carritoCompra {
+    border: 0;
+    font-size: 1rem;
+    padding: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background-color: rgb(10, 65, 136);
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+
+
+
+/* Main */
+main {
+    background-color: white;
+    margin: 1rem;
+    margin-left: 0;
+    border-radius: 2rem;
+    padding: 3rem;
+}
+
+.tituloh2 {
+    font-size: 30px;
+}
+
+/*Acomodamos el produto */
+.productos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+/*imagenes*/
+.imagenProductos {
+    max-width: 100%;
+    border-radius: 1rem;
+}
+
+/*Descripciones*/
+.descripcion {
+    background-color: rgb(10, 65, 136);
+    color: black;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    margin-top: -2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.tituloH3 {
+    font-size: 2rem;
+}
+
+.agregar {
+    border: 0;
+    background-color: white;
+    color: rgb(10, 65, 136);
+    padding: 0.25rem;
+    font-size: 20px;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+/*desactivamos*/
+
+.desactivar {
+    display: none;
+}
+
+
+
+
+
+
 
 
 
