@@ -1,4 +1,4 @@
-const carritoProductos = JSON.parse(localStorage.getItem("carritoProductos"))
+/*const carritoProductos = JSON.parse(localStorage.getItem("carritoProductos"))
 
 const contenedorVacio = document.querySelector("#vacio");
 const contenedorComprar = document.querySelector("#comprar"); 
@@ -67,7 +67,27 @@ cargarCarrito();
         botonEliminar.forEach(boton => {
             boton.addEventListener("click", eliminarDelCarrito);
         })
-    };
+    };*/
+
+const productosEnCarrito = JSON.parse(localStorage.getItem("productosEnCarrito"));
+
+
+const contenedorCarritoVacio = document.querySelector("#carritoVacio");
+const contenedorCarritoProductos = document.querySelector("#CarritoProductos");
+const contenedorCarritoAcciones = document.querySelector("#carritoAcciones");
+
+
+
+
+
+
+if (productosEnCarrito) {
+    contenedorCarritoVacio.classList.add("disabled")
+} else {
+
+
+}
+
 
 
 
