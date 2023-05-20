@@ -167,6 +167,7 @@ body {
 /*caracteristicas*/
 .caracteristicas .container{
     text-align: center;
+    justify-content: center;
     padding: 200px 12px;
 }
 
@@ -206,32 +207,13 @@ body {
     padding: 12px;
 }
 
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Bebas Neue', cursive;
-}
-
-
-ul {
-    list-style-type: none;
-}
-
-
-a {
-    text-decoration: none;
-}
-
-
 /* Productos */
 
 
 .contenedor {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    background-color: #a35571;
+    background-color: blueviolet;
 }
 
 
@@ -480,11 +462,42 @@ main {
 .desactivado {
     display: none;
 }
+.cerrarMenu {
+    display: none;
+}
 
+
+/*ubicacion*/
+.ubicacion {
+    font-family: bebas;
+    background-image: linear-gradient(#a35571, rgba(190, 37, 170, 0.933));
+    margin: 25px;
+    padding: 10px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    gap: 10px;
+    justify-content: center;
+    align-items: center; 
+}
+
+.headerMobile {
+    display: none;
+}
 
 
 @media only screen and (min-width:320px){
-
+    .ubicacion {
+        width: 90%;
+        ubicacion h2 
+        font-size: 25px; 
+        .ubicacion p 
+        font-size: 20px; 
+    }
+    iframe {
+        width: 100%;
+    }
 
 }
 
@@ -570,5 +583,7 @@ main {
     .caracteristicas ul {
         margin-left: 100px;
     }
+
+    
 }
 

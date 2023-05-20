@@ -15,8 +15,12 @@
 
 
     <div class="contenedor"> <!--Contenedor de toda la pagina-->
-        <aside>
-
+        <header class="headerMobile">
+            <h1 class="logo"> TecnoSetIphone </h1>
+            <button id="abrirMenu" class="abrirMenu" > <i class="bi bi-list"></i> </button>
+        </header>
+        <aside class="asideVisible" >
+            <button id="cerrarMenu" class="cerrarMenu" > <i class="bi bi-x-lg"></i> </button>
 
             <header>
                 <h1 class="logo"> TecnoSetIphone </h1>
@@ -35,7 +39,7 @@
                         <button id="todos" class="botonMenu botonCategoria active"> <i class="bi bi-hand-index-thumb"></i> Nuestros productos </button>
                     </li>
                     <li>
-                         <a class="botonMenu botonCarrito " href="./carro.html"> <i class="bi bi-cart"></i> Carrito <span id="numerito" class="numerito">0</span></a>
+                        <a class="botonMenu botonCarrito " href="./carro.html"> <i class="bi bi-cart"></i> Carrito <span id="numerito" class="numerito">0</span></a>
                     </li>
                 </ul>
             </nav>
@@ -50,7 +54,7 @@
         <main>
             <h2 class="tituloPrincipal"> Todos los productos</h2>
             <div id="contenedorProductos" class="contenedorProductos">
-               
+        
             </div>
         </main>
 
