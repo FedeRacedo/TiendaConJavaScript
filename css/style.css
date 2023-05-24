@@ -459,14 +459,6 @@ main {
 }
 
 
-.desactivado {
-    display: none;
-}
-.cerrarMenu {
-    display: none;
-}
-
-
 /*ubicacion*/
 .ubicacion {
     font-family: bebas;
@@ -482,8 +474,13 @@ main {
     align-items: center; 
 }
 
-.headerMobile {
-    display: none;
+.contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #ffebf1;
+    padding: 3rem;
 }
 
 
